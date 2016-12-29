@@ -1,0 +1,9 @@
+﻿CREATE TABLE [BT].[ShipTypes]
+(
+	[ShipTypeID] INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
+	[Name] INT NOT NULL, 
+    [Width] INT NOT NULL, 
+    [Height] INT NOT NULL,
+
+	CONSTRAINT [UQ_ShipTypes_Name] UNIQUE NONCLUSTERED (Name)
+)

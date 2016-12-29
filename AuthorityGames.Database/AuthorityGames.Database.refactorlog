@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="305a5822-0473-482a-897e-80880bbf1bbb" ChangeDateTime="12/29/2016 13:09:43">
+    <Property Name="ElementName" Value="[BT].[User].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[BT].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c1d0f931-7c74-4ec4-accc-3c82cfcbc237" ChangeDateTime="12/29/2016 13:18:34">
+    <Property Name="ElementName" Value="[BT].[GameBattleshipMatch].[Created]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[BT].[GameBattleshipMatch]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreatedDateTime" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6883e649-0118-4416-9a76-a443a4b8229d" ChangeDateTime="12/29/2016 13:18:37">
+    <Property Name="ElementName" Value="[BT].[GameBattleshipMatch].[FinishedTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[BT].[GameBattleshipMatch]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FinishedDateTime" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ee2437d0-aa2d-48ba-8b7c-787e2f6e1e98" ChangeDateTime="12/29/2016 13:18:57">
+    <Property Name="ElementName" Value="[BT].[GameBattleshipMatch].[CreatedDateTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[BT].[GameBattleshipMatch]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Create" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="097f647e-945d-42ae-b985-5683805f4aaf" ChangeDateTime="12/29/2016 13:19:01">
+    <Property Name="ElementName" Value="[BT].[GameBattleshipMatch].[Create]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[BT].[GameBattleshipMatch]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Created" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ea3ae43d-1a11-4d58-a08e-e4b838c00a26" ChangeDateTime="12/29/2016 13:19:04">
+    <Property Name="ElementName" Value="[BT].[GameBattleshipMatch].[FinishedDateTime]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[BT].[GameBattleshipMatch]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Finished" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6a51601a-6ffe-4fdc-9c4f-10a48c17566a" ChangeDateTime="12/29/2016 14:32:51">
+    <Property Name="ElementName" Value="[BT].[UserMatchHistory].[GameID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[BT].[UserMatchHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MatchID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b4492776-e368-4bbe-9087-42614b45da41" ChangeDateTime="12/29/2016 14:35:51">
+    <Property Name="ElementName" Value="[BT].[ShipTypes].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[BT].[ShipTypes]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ShipTypeID" />
+  </Operation>
+</Operations>

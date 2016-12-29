@@ -1,0 +1,14 @@
+﻿CREATE TABLE [BT].[User]
+(
+	[UserID] INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
+    [Email] VARCHAR(50) NOT NULL, 
+	[NickName] VARCHAR(50) NOT NULL, 
+    [FirstName] VARCHAR(50) NULL, 
+    [LastName] VARCHAR(50) NULL, 
+    [IsActive] BIT NOT NULL DEFAULT 0, 
+    [EmailConfirmed] BIT NOT NULL DEFAULT 0, 
+    [RegistrationDate] DATETIME DEFAULT (GETUTCDATE()) NULL, 
+    [PasswordHash] VARCHAR(255) NOT NULL,
+
+	CONSTRAINT [UQ_User_Email] UNIQUE NONCLUSTERED (Email)
+)
