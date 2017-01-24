@@ -51,6 +51,10 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="jose-jwt, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jose-jwt.2.1.0\lib\net461\jose-jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -78,6 +82,10 @@
     </Reference>
     <Reference Include="Nancy, Version=1.4.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Nancy.1.4.3\lib\net40\Nancy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nancy.Authentication.Stateless, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nancy.Authentication.Stateless.1.4.1\lib\net40\Nancy.Authentication.Stateless.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Nancy.Bootstrappers.Unity, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -126,17 +134,29 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IOC\Container.cs" />
-    <Compile Include="Models\ScoreViewModel.cs" />
+    <Compile Include="Auth\UserIdentity.cs" />
+    <Compile Include="Modules\Auth.cs" />
     <Compile Include="UnityBootstrapper.cs" />
     <Compile Include="Modules\Root.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AuthorityGame.Domain.Services\AuthorityGame.Domain.Services.csproj">
+      <Project>{F96FA0BC-A311-4D2B-89B2-98282D383AEF}</Project>
+      <Name>AuthorityGame.Domain.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AuthorityGames.DAL\AuthorityGames.DAL.csproj">
+      <Project>{E0C68F2C-96CB-41C7-92CF-9B393743047F}</Project>
+      <Name>AuthorityGames.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AuthorityGames.Domain\AuthorityGames.Domain.csproj">
       <Project>{5f9e6a11-6c5f-4086-b8cf-f34353b9e8b6}</Project>
       <Name>AuthorityGames.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AuthorityGames.IOC\AuthorityGames.IOC.csproj">
+      <Project>{4E9BB295-7AE9-42DF-954C-1D3C282979B3}</Project>
+      <Name>AuthorityGames.IOC</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

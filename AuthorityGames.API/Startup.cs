@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AuthorityGames.API.IOC;
-using Microsoft.Practices.Unity;
+﻿using AuthorityGames.IOC;
 using Nancy.Owin;
 using Owin;
 
 namespace AuthorityGames.API
 {
-    public class Startup
+	public class Startup
     {
         public void Configuration(IAppBuilder app)
 		{

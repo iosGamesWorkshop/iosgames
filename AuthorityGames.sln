@@ -1,13 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityGames.API", "AuthorityGames.API\AuthorityGames.API.csproj", "{E800EB37-74A4-48AE-8A7C-8CDF747C54C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityGames.Domain", "AuthorityGames.Domain\AuthorityGames.Domain.csproj", "{5F9E6A11-6C5F-4086-B8CF-F34353B9E8B6}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AuthorityGames.Database", "AuthorityGames.Database\AuthorityGames.Database.sqlproj", "{32462301-A3B5-4B66-86DF-9998B5CB1D0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{87700E7E-3658-4D0E-8F69-793463C47CC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{DDAB25BF-C3E9-4944-85B7-2627AD29835C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityGames.DAL", "AuthorityGames.DAL\AuthorityGames.DAL.csproj", "{E0C68F2C-96CB-41C7-92CF-9B393743047F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityGames.IOC", "AuthorityGames.IOC\AuthorityGames.IOC.csproj", "{4E9BB295-7AE9-42DF-954C-1D3C282979B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorityGame.Domain.Services", "AuthorityGame.Domain.Services\AuthorityGame.Domain.Services.csproj", "{F96FA0BC-A311-4D2B-89B2-98282D383AEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,9 +39,28 @@ Global
 		{32462301-A3B5-4B66-86DF-9998B5CB1D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32462301-A3B5-4B66-86DF-9998B5CB1D0C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{32462301-A3B5-4B66-86DF-9998B5CB1D0C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E0C68F2C-96CB-41C7-92CF-9B393743047F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0C68F2C-96CB-41C7-92CF-9B393743047F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0C68F2C-96CB-41C7-92CF-9B393743047F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0C68F2C-96CB-41C7-92CF-9B393743047F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E9BB295-7AE9-42DF-954C-1D3C282979B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E9BB295-7AE9-42DF-954C-1D3C282979B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E9BB295-7AE9-42DF-954C-1D3C282979B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E9BB295-7AE9-42DF-954C-1D3C282979B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96FA0BC-A311-4D2B-89B2-98282D383AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96FA0BC-A311-4D2B-89B2-98282D383AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96FA0BC-A311-4D2B-89B2-98282D383AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96FA0BC-A311-4D2B-89B2-98282D383AEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5F9E6A11-6C5F-4086-B8CF-F34353B9E8B6} = {87700E7E-3658-4D0E-8F69-793463C47CC3}
+		{32462301-A3B5-4B66-86DF-9998B5CB1D0C} = {DDAB25BF-C3E9-4944-85B7-2627AD29835C}
+		{E0C68F2C-96CB-41C7-92CF-9B393743047F} = {DDAB25BF-C3E9-4944-85B7-2627AD29835C}
+		{4E9BB295-7AE9-42DF-954C-1D3C282979B3} = {87700E7E-3658-4D0E-8F69-793463C47CC3}
+		{F96FA0BC-A311-4D2B-89B2-98282D383AEF} = {87700E7E-3658-4D0E-8F69-793463C47CC3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
